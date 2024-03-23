@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Andshop - Admin Dashboard HTML Template.">
 
-    <title>@yield('title') - AndShop</title>
+    <title>@yield('title') - DAK Style Apparel</title>
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">

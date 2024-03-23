@@ -35,7 +35,7 @@
                 </div>
                 <div class="logo">
                     <a href="{{route('home')}}">
-                        <img src="{{asset('web/img/logo.png')}}" alt="logo">
+                        <img src="{{asset('web/img/logo2.png')}}" alt="logo">
                     </a>
                 </div>
             </div>
@@ -45,14 +45,14 @@
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="{{route('home')}}">
-                    <img src="{{asset('web/img/logo.png')}}" alt="logo">
+                    <img src="{{asset('web/img/logo2.png')}}" alt="logo">
                 </a>
                 <div class="mean-push"></div>
                 <div class="collapse navbar-collapse mean-menu" style="display: none;">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="{{route('home')}}" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="{{route('products')}}" class="nav-link">Products</a></li>
-                        <li class="nav-item"><a href="{{route('order-tracking')}}" class="nav-link">Order Tracking</a></li>
+                        {{-- <li class="nav-item"><a href="{{route('order-tracking')}}" class="nav-link">Order Tracking</a></li> --}}
                         <li class="nav-item"><a href="{{route('about-us')}}" class="nav-link">About Us</a></li>
                         <li class="nav-item"><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
                     </ul>
