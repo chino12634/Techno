@@ -5,7 +5,7 @@
         <div class="ec-brand">
             <a href="/admin/dashboard">
                 <img src="{{asset('/web/img/favicon/ms-icon-144x144.png')}}" alt="">
-                <span class="ec-brand-name text-truncate">DAK</span>
+                <span class="ec-brand-name text-truncate">DAK'S</span>
             </a>
         </div>
 
