@@ -45,7 +45,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="{{route('home')}}">
-                    <img src="{{asset('web/img/logo2.png')}}" alt="logo">
+                    <img src="{{asset('web/img/logo4.png')}}" alt="logo">
                 </a>
                 <div class="mean-push"></div>
                 <div class="collapse navbar-collapse mean-menu" style="display: none;">

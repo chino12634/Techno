@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                 <div class="footer_left_side">
-                    <a href="#!"><img src="{{asset('web/img/logo.png')}}" alt="logo"></a>
+                    <a href="#!"><img src="{{asset('web/img/logo4.png')}}" alt="logo"></a>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                         Obcaecati culpa assumenda voluptas placeat amet consectetur adipisicing elit.
                         Obcaecati culpa assumenda voluptas placeat.</p>
