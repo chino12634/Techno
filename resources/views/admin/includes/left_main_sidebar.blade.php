@@ -4,9 +4,8 @@
 
         <div class="ec-brand">
             <a href="/admin/dashboard">
-                <img class="ec-brand-icon"
-                    src="https://andit.co/projects/html/andshop/andshop-dashboard/assets/img/logo/favicon.png" alt="">
-                <span class="ec-brand-name text-truncate">ANDSHOP</span>
+                <img src="{{asset('/web/img/favicon/ms-icon-144x144.png')}}" alt="">
+                <span class="ec-brand-name text-truncate">DAK</span>
             </a>
         </div>
 
