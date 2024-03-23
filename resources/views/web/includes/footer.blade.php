@@ -27,7 +27,7 @@
                         <li> <a href="{{route('about-us')}}">About Us</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Frequently Questions</a></li>
-                        <li><a href="{{route('order-tracking')}}">Order Tracking</a></li>
+                        {{-- <li><a href="{{route('order-tracking')}}">Order Tracking</a></li> --}}
                         <li><a href="#">Compare</a></li>
                     </ul>
                 </div>

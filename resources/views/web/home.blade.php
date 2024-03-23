@@ -14,7 +14,6 @@
                             Live For <span class="wow flipInX" data-wow-duration="2.0s" data-wow-delay=".5s"
                                 style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: flipInX;">Fashion</span>
                         </h1>
-                        <h3>Save Up To 50%</h3>
                         <a href="{{route('products')}}" class="theme-btn-one bg-black btn_md">Shop Now</a>
                     </div>
                 </div>

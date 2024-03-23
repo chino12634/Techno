@@ -52,7 +52,7 @@
                     <ul class="navbar-nav">
                         <li class="nav-item"><a href="{{route('home')}}" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="{{route('products')}}" class="nav-link">Products</a></li>
-                        <li class="nav-item"><a href="{{route('order-tracking')}}" class="nav-link">Order Tracking</a></li>
+                        {{-- <li class="nav-item"><a href="{{route('order-tracking')}}" class="nav-link">Order Tracking</a></li> --}}
                         <li class="nav-item"><a href="{{route('about-us')}}" class="nav-link">About Us</a></li>
                         <li class="nav-item"><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
                     </ul>
