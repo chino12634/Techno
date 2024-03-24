@@ -196,7 +196,7 @@
                                         <div class="instgram_post">
                                             <a href="#!">
                                                 <i class="fab fa-instagram"></i>
-                                                <img src="{{asset('web/img/instagram/post8.png')}}" alt="img">
+                                                <img src="{{asset('web/img/instagram/Ebol.jpg')}}" alt="img">
                                             </a>
                                         </div>
                                     </div>

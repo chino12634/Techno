@@ -43,13 +43,13 @@ class AuthController extends Controller
                 'first_name' => 'required|string|max:256',
                 'last_name' => 'required|string|max:256',
                 'email' => 'required|string|email|max:256|unique:users',
-                'password' => 'required|string|min:8|max:32|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,10}$/',
-                'retype_password' => 'required|string|min:8|max:32|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,10}$/|same:password',
-                'telephone' => 'required|string|min:10|max:10|unique:users|regex:/^0[0-9]{9}$/',
-                'apartment_number' => 'required|string|max:256',
-                'street' => 'required|string|max:256',
-                'ward' => 'required|string|max:256',
-                'district' => 'required|string|max:256',
+                'password' => 'required|string|',
+                'retype_password' => 'required|string|same:password',
+                'telephone' => 'required|string|min:11|max:11|unique:users',
+                // 'apartment_number' => 'required|string|max:256',
+                // 'street' => 'required|string|max:256',
+                // 'ward' => 'required|string|max:256',
+                // 'district' => 'required|string|max:256',
                 'city' => 'required|string|max:256',
                 'receive_newsletter' => 'in:on,off',
                 'receive_offers' => 'in:on,off',
@@ -57,7 +57,7 @@ class AuthController extends Controller
             [
                 'password.regex' => 'Password must be at least 8 and up to 10 characters, one uppercase letter, one lowercase letter, one number and one special character.',
                 'retyped_password.regex' => 'Password must be at least 8 and up to 10 characters, one uppercase letter, one lowercase letter, one number and one special character.',
-                'telephone.regex' => 'Telephone must be 10 digits and start with 0.',
+                // 'telephone.regex' => 'Telephone must be 11 digits and start with 0.',
             ]
         );
         $request->merge([
@@ -66,6 +66,7 @@ class AuthController extends Controller
             'receive_offers' => $request->receive_offers == 'on' ? 1 : 0,
         ]);
         User::create($request->all());
+
         return redirect()->route('login');
     }
 

@@ -26,24 +26,21 @@ class UserController extends Controller
     {
         $request->validate(
             [
-                'upload' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+                'upload' => 'nullable|image|mimes:jpeg,png,jpg,gif',
                 'gender' => 'required|in:1,0',
                 'first_name' => 'required|string|max:256',
                 'last_name' => 'required|string|max:256',
                 'birthdate' => 'required|date|before:'.now()->subYears(18)->toDateString(),
-                'password' => 'nullable|string|min:8|max:32|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,10}$/',
-                'apartment_number' => 'required|string|max:256',
-                'street' => 'required|string|max:256',
-                'ward' => 'required|string|max:256',
-                'district' => 'required|string|max:256',
-                'city' => 'required|string|max:256',
+                'password' => 'nullable|string|',
+                // 'apartment_number' => 'required|string|max:256',
+                // 'street' => 'required|string|max:256',
+                // 'ward' => 'required|string|max:256',
+                // 'district' => 'required|string|max:256',
+                // 'city' => 'required|string|max:256',
                 'receive_newsletter' => 'in:on,off',
                 'receive_offers' => 'in:on,off',
             ],
-            [
-                'password.regex' => 'Password must be at least 8 and up to 10 characters, one uppercase letter, one lowercase letter, one number and one special character.',
-                'telephone.regex' => 'Telephone must be 10 digits and start with 0.',
-            ]
+
         );
         $request->merge([
             'avatar' => $request->file('upload') ? base64_encode(file_get_contents($request->file('upload')->path())) : Auth::user()->avatar,
@@ -114,16 +111,16 @@ class UserController extends Controller
                 'avatar_upload' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
                 'email' => 'required|string|email|max:256',
                 'new_password' => 'nullable|string|min:8|max:32|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,10}$/',
-                'telephone' => 'required|string|min:10|max:10|regex:/^0[0-9]{9}$/',
-                'apartment_number' => 'required|string|max:256',
-                'street' => 'required|string|max:256',
-                'ward' => 'required|string|max:256',
-                'district' => 'required|string|max:256',
+                'telephone' => 'required|string|min:11|max:11',
+                // 'apartment_number' => 'required|string|max:256',
+                // 'street' => 'required|string|max:256',
+                // 'ward' => 'required|string|max:256',
+                // 'district' => 'required|string|max:256',
                 'city' => 'required|string|max:256',
             ],
             [
                 'new_password.regex' => 'Password must be at least 8 and up to 10 characters, one uppercase letter, one lowercase letter, one number and one special character.',
-                'telephone.regex' => 'Telephone must be 10 digits and start with 0.',
+                // 'telephone.regex' => 'Telephone must be 11 digits and start with 0.',
             ]
         );
         if($request->avatar_upload != null){
@@ -143,11 +140,11 @@ class UserController extends Controller
             ]);
         }
         try{
-            User::find($id)->update($request->all());    
+            User::find($id)->update($request->all());
         }catch(Exception $e){
             return back()->withError('Can not update admin, please try again.')->withInput();
         }
-          
+
         return redirect()
         ->route('admin.adminUser')
         ->with('success','User created successfully');
@@ -159,16 +156,16 @@ class UserController extends Controller
                 'last_name' => 'required|string|max:256',
                 'email' => 'required|string|email|max:256',
                 'new_password' => 'nullable|string|min:8|max:32|regex:/^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,10}$/',
-                'telephone' => 'required|string|min:10|max:10|regex:/^0[0-9]{9}$/',
-                'apartment_number' => 'nullable|string|max:256',
-                'street' => 'nullable|string|max:256',
-                'ward' => 'nullable|string|max:256',
-                'district' => 'nullable|string|max:256',
+                'telephone' => 'required|string|min:11|max:11',
+                // 'apartment_number' => 'nullable|string|max:256',
+                // 'street' => 'nullable|string|max:256',
+                // 'ward' => 'nullable|string|max:256',
+                // 'district' => 'nullable|string|max:256',
                 'city' => 'nullable|string|max:256',
             ],
             [
                 'new_password.regex' => 'Password must be at least 8 and up to 10 characters, one uppercase letter, one lowercase letter, one number and one special character.',
-                'telephone.regex' => 'Telephone must be 10 digits and start with 0.',
+                // 'telephone.regex' => 'Telephone must be 11 digits and start with 0.',
             ]
         );
         if($request->new_password != null) {
@@ -179,11 +176,11 @@ class UserController extends Controller
             ]);
         }
         try{
-            User::find($id)->update($request->all());    
+            User::find($id)->update($request->all());
         }catch(Exception $e){
             return back()->withError('Can not update admin, please try again.')->withInput();
         }
-          
+
         return redirect()
         ->route('admin.adminUser.profile')
         ->with('success','Updated successfully');
