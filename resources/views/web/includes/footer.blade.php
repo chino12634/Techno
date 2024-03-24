@@ -12,9 +12,7 @@
                         <ul>
                             <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#!"><i class="fab fa-linkedin"></i></a></li>
                             <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#!"><i class="fab fa-google-plus-g"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -25,10 +23,10 @@
                     <ul>
                         <li><a href="{{route('home')}}">Home</a></li>
                         <li> <a href="{{route('about-us')}}">About Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Frequently Questions</a></li>
+                        {{-- <li><a href="#">Privacy Policy</a></li>--}}
+                        {{-- <li><a href="#">Frequently Questions</a></li>  --}}
                         {{-- <li><a href="{{route('order-tracking')}}">Order Tracking</a></li> --}}
-                        <li><a href="#">Compare</a></li>
+                        {{-- <li><a href="#">Compare</a></li> --}}
                     </ul>
                 </div>
             </div>

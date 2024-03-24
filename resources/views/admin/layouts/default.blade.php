@@ -28,7 +28,7 @@
     <link id="style.css" href="{{asset('admin/css/style.css')}}" rel="stylesheet">
 
     <!-- FAVICON -->
-    <link href="https://andit.co/projects/html/andshop/andshop-dashboard/assets/img/favicon.png" rel="shortcut icon">
+    <link href="{{asset('web/img/favicon-96x96.png')}}" rel="shortcut icon">
 
 </head>
 
