@@ -22,10 +22,10 @@ return new class extends Migration
             $table->unsignedInteger('payment_id');
             $table->foreign('payment_id')->references('id')->on('payments')->onUpdate('cascade');
             $table->string('note', 512)->nullable();;
-            $table->string('apartment_number', 256);
-            $table->string('street', 256);
-            $table->string('ward', 256);
-            $table->string('district', 256);
+            // $table->string('apartment_number', 256);
+            // $table->string('street', 256);
+            // $table->string('ward', 256);
+            // $table->string('district', 256);
             $table->string('city', 256);
             $table->string('telephone', 10);
             $table->tinyInteger('status');

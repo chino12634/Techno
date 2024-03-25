@@ -91,7 +91,7 @@
                                 <a href="{{route('products.single-product', ['id' => $product->id])}}">{{$product->name}}</a>
                             </h5>
                             <span class="price">
-                                <span class="new">@money($product->discountPrice())</span>
+                                <span class="new">@money($product->discountPrice(), '₱')</span>
                             </span>
                         </div>
                     </div>

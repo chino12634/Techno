@@ -75,13 +75,13 @@ Route::middleware(['authenticate', 'authorize'])->name('admin.')->prefix('admin'
     Route::get('/user', [UserController::class, 'showUsers'])->name('user');
     Route::get('/user/{id}/info', [UserController::class, 'showUserDetail'])->name('user.info');
 
-    Route::get('/admin-user', [UserController::class, 'showAdminUsers'])->name('adminUser')->middleware('role:admin');
-    Route::get('/admin-user/create', [UserController::class, 'showFormCreate'])->name('adminUser.create')->middleware('role:admin');
-    Route::post('/admin-user/create', [UserController::class, 'storeAdminUser'])->name('adminUser.create')->middleware('role:admin');
-    Route::post('/admin-user/update{id}', [UserController::class, 'updateAdminUser'])->name('adminUser.update')->middleware('role:admin');
-    Route::get('/admin-user/profile', [UserController::class, 'showAdminProfile'])->name('adminUser.profile')->middleware('role:admin');
-    Route::post('/admin-user/update-profile/{id}', [UserController::class, 'updateProfile'])->name('adminUser.updateProfile')->middleware('role:admin');
-    Route::get('/admin-user/{user}/edit', [UserController::class, 'editAdminUser'])->name('adminUser.edit')->middleware('role:admin');
+    Route::get('/admin-user', [UserController::class, 'showAdminUsers'])->name('adminUser');
+    Route::get('/admin-user/create', [UserController::class, 'showFormCreate'])->name('adminUser.create');
+    Route::post('/admin-user/create', [UserController::class, 'storeAdminUser'])->name('adminUser.create');
+    Route::post('/admin-user/update{id}', [UserController::class, 'updateAdminUser'])->name('adminUser.update');
+    Route::get('/admin-user/profile', [UserController::class, 'showAdminProfile'])->name('adminUser.profile');
+    Route::post('/admin-user/update-profile/{id}', [UserController::class, 'updateProfile'])->name('adminUser.updateProfile');
+    Route::get('/admin-user/{user}/edit', [UserController::class, 'editAdminUser'])->name('adminUser.edit');
 
     Route::get('/product', [ProductController::class, 'index'])->name('product');
     Route::get('/product/create', [ProductController::class, 'showFormCreate'])->name('product.create');

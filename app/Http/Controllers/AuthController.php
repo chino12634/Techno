@@ -43,8 +43,8 @@ class AuthController extends Controller
                 'first_name' => 'required|string|max:256',
                 'last_name' => 'required|string|max:256',
                 'email' => 'required|string|email|max:256|unique:users',
-                'password' => 'required|string|',
-                'retype_password' => 'required|string|same:password',
+                'password' => 'required|string|min:8|max:10',
+                'retype_password' => 'required|string|min:8|max:10|same:password',
                 'telephone' => 'required|string|min:11|max:11|unique:users',
                 // 'apartment_number' => 'required|string|max:256',
                 // 'street' => 'required|string|max:256',
@@ -55,8 +55,8 @@ class AuthController extends Controller
                 'receive_offers' => 'in:on,off',
             ],
             [
-                'password.regex' => 'Password must be at least 8 and up to 10 characters, one uppercase letter, one lowercase letter, one number and one special character.',
-                'retyped_password.regex' => 'Password must be at least 8 and up to 10 characters, one uppercase letter, one lowercase letter, one number and one special character.',
+                'password.regex' => 'Password must be at least 8 and up to 10 characters.',
+                'retyped_password.regex' => 'Password must be at least 8 and up to 10 characters.',
                 // 'telephone.regex' => 'Telephone must be 11 digits and start with 0.',
             ]
         );

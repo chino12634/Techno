@@ -58,7 +58,7 @@
                                             @enderror
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="telephone" class="form-label">Telephone</label>
+                                            <label for="telephone" class="form-label">Phone Number</label>
                                             <input type="text" class="form-control" placeholder="telephone" min="0" id="telephone" name="telephone" value="{{ old('telephone') }}">
                                             @error('telephone')
                                             <p class="text-danger">{{ $message }}</p>
@@ -78,34 +78,34 @@
                                                 <option value="1">Female</option>
                                             </select>
                                         </div>
-                                        <div class="col-md-6">
+                                        {{-- <div class="col-md-6">
                                             <label for="apartment_number" class="form-label">Apartment number</label>
                                             <input type="text" class="form-control" placeholder="apartment number" id="apartment_number" name="apartment_number" value="{{ old('apartment_number') }}">
                                             @error('apartment_number')
                                             <p class="text-danger">{{ $message }}</p>
                                             @enderror
-                                        </div>
-                                        <div class="col-md-6">
+                                        </div> --}}
+                                        {{-- <div class="col-md-6">
                                             <label for="district" class="form-label">street</label>
                                             <input type="text" class="form-control" placeholder="Street" min="0" id="street" name="street" value="{{ old('street') }}">
                                             @error('street')
                                             <p class="text-danger">{{ $message }}</p>
                                             @enderror
-                                        </div>
-                                        <div class="col-md-6">
+                                        </div> --}}
+                                        {{-- <div class="col-md-6">
                                             <label for="ward" class="form-label">ward</label>
                                             <input type="text" class="form-control" placeholder="ward" min="0" id="ward" name="ward" value="{{ old('ward') }}">
                                             @error('ward')
                                             <p class="text-danger">{{ $message }}</p>
                                             @enderror
-                                        </div>
-                                        <div class="col-md-6">
+                                        </div> --}}
+                                        {{-- <div class="col-md-6">
                                             <label for="district" class="form-label">district</label>
                                             <input type="text" class="form-control" placeholder="district" min="0" id="district" name="district" value="{{ old('district') }}">
                                             @error('district')
                                             <p class="text-danger">{{ $message }}</p>
                                             @enderror
-                                        </div>
+                                        </div> --}}
                                         <div class="col-md-6">
                                             <label for="city" class="form-label">city</label>
                                             <input type="text" class="form-control" placeholder="city" min="0" id="city" name="city" value="{{ old('city') }}">

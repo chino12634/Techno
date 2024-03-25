@@ -131,7 +131,7 @@
                                     <div class="account_details_form">
                                         <form method="POST" action="{{route('user.my-account.update-account')}}" enctype="multipart/form-data">
                                             @csrf
-                                            <div class="img_profiles">
+                                            {{-- <div class="img_profiles">
                                                 <a onclick="openUpload()">
                                                 @if($user->avatar)
                                                     <img id="avatar" src="data:image/png;base64, {{$user->avatar}}" alt="img">
@@ -140,7 +140,7 @@
                                                 @endif
                                                 </a>
                                                 <input type="file" accept="image/*" id="upload" name="upload" hidden>
-                                            </div>
+                                            </div> --}}
                                             <div class="input-radio">
                                                 <span class="custom-radio"><input type="radio" id="gender" name="gender" value="1" {{ $user->gender ? 'checked' : '' }} /> Mr.</span>
                                                 <span class="custom-radio"><input type="radio" id="gender" name="gender" value="0" {{ $user->gender ? '' : 'checked' }} /> Mrs.</span>
@@ -151,14 +151,14 @@
                                                     <input type="text" class="form-control" value="{{ $user->first_name }}" id="first_name" name="first_name" required autofocus>
                                                     @error('first_name')
                                                         <p class="text-danger">{{ $message }}</p>
-                                                    @enderror    
+                                                    @enderror
                                                 </div>
                                                 <div class="default-form-box col-lg-6">
                                                     <label for="last_name">Last name <span>*</span></label>
                                                     <input type="text" class="form-control" value="{{ $user->last_name }}" id="last_name" name="last_name" required>
                                                     @error('last_name')
                                                         <p class="text-danger">{{ $message }}</p>
-                                                    @enderror  
+                                                    @enderror
                                                 </div>
                                             </div>
                                             <div class="default-form-box">
@@ -166,52 +166,52 @@
                                                 <input type="date" class="form-control" id="birthdate" name="birthdate" value="{{ $user->birthdate }}">
                                                 @error('birthdate')
                                                         <p class="text-danger">{{ $message }}</p>
-                                                @enderror 
+                                                @enderror
                                             </div>
-                                            <div class="default-form-box">
+                                            {{-- <div class="default-form-box">
                                                 <label for="telephone">Telephone <span>*</span></label>
                                                 <input type="text" class="form-control" value="{{ $user->telephone }}" readonly>
-                                            </div>
-                                            <div class="default-form-box">
+                                            </div> --}}
+                                            {{-- <div class="default-form-box">
                                                 <label for="apartment_number">Apartment number <span>*</span></label>
                                                 <input type="text" class="form-control" value="{{ $user->apartment_number }}" id="apartment_number" name="apartment_number" required>
                                                 @error('apartment_number')
                                                         <p class="text-danger">{{ $message }}</p>
-                                                @enderror  
-                                            </div>
-                                            <div class="row">
+                                                @enderror
+                                            </div> --}}
+                                            {{-- <div class="row">
                                                 <div class="default-form-box col-lg-6">
                                                     <label for="street">Street <span>*</span></label>
                                                     <input type="text" class="form-control" value="{{ $user->street }}" id="street" name="street" required>
                                                     @error('street')
                                                         <p class="text-danger">{{ $message }}</p>
-                                                    @enderror  
+                                                    @enderror
                                                 </div>
                                                 <div class="default-form-box col-lg-6">
                                                     <label for="ward">Ward <span>*</span></label>
                                                     <input type="text" class="form-control" value="{{ $user->ward }}" id="ward" name="ward" required>
                                                     @error('ward')
                                                         <p class="text-danger">{{ $message }}</p>
-                                                    @enderror  
+                                                    @enderror
                                                 </div>
-                                            </div>
+                                            </div> --}}
                                             <div class="row">
-                                                <div class="default-form-box col-lg-6">
+                                                {{-- <div class="default-form-box col-lg-6">
                                                     <label for="district">District <span>*</span></label>
                                                     <input type="text" class="form-control" value="{{ $user->district }}" id="district" name="district" required>
                                                     @error('district')
                                                         <p class="text-danger">{{ $message }}</p>
-                                                    @enderror  
-                                                </div>
+                                                    @enderror
+                                                </div> --}}
                                                 <div class="default-form-box col-lg-6">
                                                     <label for="city">City <span>*</span></label>
                                                     <input type="text" class="form-control" value="{{ $user->city }}" id="city" name="city" required>
                                                     @error('city')
                                                         <p class="text-danger">{{ $message }}</p>
-                                                    @enderror  
+                                                    @enderror
                                                 </div>
                                             </div>
-                                            <div class="default-form-box">                   
+                                            <div class="default-form-box">
                                                 <label for="email">Email <span>*</span></label>
                                                 <input type="email" class="form-control" value="{{ $user->email }}" readonly>
                                             </div>
@@ -229,7 +229,7 @@
                                             </label>
                                             @error('receive_offers')
                                                     <p class="text-danger">{{ $message }}</p>
-                                            @enderror 
+                                            @enderror
                                             </br>
                                             <br>
                                             <label class="checkbox-default">
@@ -240,7 +240,7 @@
                                             </label>
                                             @error('receive_newsletter')
                                                     <p class="text-danger">{{ $message }}</p>
-                                            @enderror  
+                                            @enderror
                                             </br>
                                             <div class="save_button mt-3">
                                                 <button type="submit"
