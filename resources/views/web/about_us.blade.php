@@ -358,7 +358,7 @@
             </div>
         </section>
         <!-- Instagram Arae -->
-        <section id="instagram_area_one" class="pt-100">
+        {{-- <section id="instagram_area_one" class="pt-100">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
@@ -576,6 +576,6 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
     </section>
 @endsection
