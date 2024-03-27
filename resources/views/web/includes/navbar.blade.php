@@ -55,6 +55,8 @@
                         {{-- <li class="nav-item"><a href="{{route('order-tracking')}}" class="nav-link">Order Tracking</a></li> --}}
                         <li class="nav-item"><a href="{{route('about-us')}}" class="nav-link">About Us</a></li>
                         <li class="nav-item"><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Reviews</a></li>
                     </ul>
                     <div class="others-option">
                         <div class="option-item">
@@ -74,6 +76,15 @@
                                 <i class="fas fa-search search-btn"></i>
                             </div>
                         </div>
+                        <div class="option-item">
+                            <ul class="top-header-menu">
+                                @if (Auth::check())
+                                    <li><a href="{{route('user.my-account')}}">My Account</a></li>
+                                    <li><a href="{{route('logout')}}" class=""><i class="fas fa-sign-out-alt"></i>logout</a></li>
+                                @else
+                                    <li><a href="{{route('login')}}">Login</a></li>
+                                @endif                                 
+                            </ul>
                     </div>
                 </div>
             </nav>

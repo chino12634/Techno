@@ -5,9 +5,8 @@
             <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                 <div class="footer_left_side">
                     <a href="#!"><img src="{{asset('web/img/logo4.png')}}" alt="logo"></a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Obcaecati culpa assumenda voluptas placeat amet consectetur adipisicing elit.
-                        Obcaecati culpa assumenda voluptas placeat.</p>
+                    <p>We are a team that engaged in the field of shirt products within the WMSU COE and serve 
+                        the best service for your apparel and give you the best quality of shirts!.</p>
                     <div class="footer_left_side_icon">
                         <ul>
                             <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>

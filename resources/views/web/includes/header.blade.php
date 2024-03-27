@@ -1,5 +1,5 @@
 <!-- Top Header Area -->
-<div class="top-header">
+{{-- <div class="top-header">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-7">
@@ -20,4 +20,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}

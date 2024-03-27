@@ -125,7 +125,7 @@ class AuthController extends Controller
             return $valid;
         }
         throw ValidationException::withMessages([
-            'account' => 'These credentials do not match our records.',
+            'account' => 'Incorrect login details.',
         ]);
     }
 

@@ -11,8 +11,9 @@
                     <div class="banner_text_one">
                         <h1 class="wow flipInX" data-wow-duration="3.0s" data-wow-delay=".3s"
                             style="visibility: visible; animation-duration: 3s; animation-delay: 0.3s; animation-name: flipInX;">
-                            Live For <span class="wow flipInX" data-wow-duration="2.0s" data-wow-delay=".5s"
-                                style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: flipInX;">Fashion</span>
+                            Live your department <span class="wow flipInX" data-wow-duration="2.0s" data-wow-delay=".5s"
+                                style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: flipInX;">Fashion and pride</span>
+                                
                         </h1>
                         <a href="{{route('products')}}" class="theme-btn-one bg-black btn_md">Shop Now</a>
                     </div>
@@ -34,8 +35,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="center_heading">
-                            <h2>Hot Product</h2>
-                            <p>Mauris luctus nisi sapien tristique dignissim ornare</p>
+                            <h2>The Product Perfection</h2>
+                            <p>Get the most Popular Pick product</p>
                         </div>
                     </div>
                 </div>
