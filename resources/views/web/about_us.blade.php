@@ -32,7 +32,7 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                         <div class="about_top_left_content">
-                            <h2>ABOUT OUR Andshop STORE</h2>
+                            <h2>ABOUT OUR DAK STYLE APPAREL</h2>
                             <h4>We believe that every project existing in digital world is a result of an idea and every
                                 idea has a cause.</h4>
                             <p>For this reason, our each design serves an idea. Our strength in design is reflected by
