@@ -85,4 +85,15 @@ class ApplicationController extends Controller
     {
         return view('web.contact');
     }
+
+    public function services()
+    {
+        return view('web.services');
+    }
+
+    public function reviews()
+    {
+        return view('web.reviews');
+    }
+
 }
