@@ -1,6 +1,6 @@
 @extends('web.layouts.default')
 
-@section('title', 'services')
+@section('title', 'Services')
 
 @section('content')
     <!-- Banner Area -->
@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="common_banner_text">
-                        <h2>Contact</h2>
+                        <h2>Services</h2>
                         <ul>
                             <li><a href="{{route('home')}}">Home</a></li>
                             <li><i class="fas fa-slash"></i></li>
@@ -26,20 +26,32 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="contact_info">
-                        <h3>Contact Information</h3>
-                        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                            Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
-                            Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                            Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo,
-                            lacinia eget consectetur sed, convallis at tellus. Cras ultricies ligula sed magna dictum
-                            porta.
-                            Proin eget tortor risus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                        <h2>Introducing the future of school merchandising: DAK Style Apparel!</h2>
+                        <br>
+                        <br>
+                        <br>
+                        <p>Say goodbye to the old-school hassle of ordering school gear and hello to a seamless online experience. 
+                            Imagine effortlessly customizing your own Polo Shirt, Shirt, Lanyard, or Hoodie with just a few clicks. 
+                            Whether you prefer Sublimation, Cotton, or Lacoste fabric for your shirts, or Matte and Glossy finishes for your lanyards, 
+                            we've got you covered. And for those cozy hoodie lovers, our thick cloth option will keep you warm in style.
+                        <br>
+                        <br>
+                        <br>
+                            But wait, there's more! With our convenient online transaction system, simply send us your design and let us handle the rest. 
+                            No more waiting in line or dealing with complicated order forms. Plus, we offer hassle-free delivery and even meet-up 
+                            options within the city, making it easier than ever to get your hands on your personalized merch.
+                        <br>
+                        <br>
+                        <br>    
+                            But that's not all - DAK Style Apparel is gearing up for nationwide domination! That's right, 
+                            we're setting our sights on expanding our shipping services across the Philippines, so no matter where you are, 
+                            you can enjoy our top-notch products and stellar service. Get ready to revolutionize your school spirit with DAK Style Apparel!
                         </p>
+
                     </div>
                 </div>
             </div>
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-lg-4">
                     <div class="left_side_contact">
                         <ul>
@@ -63,7 +75,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> --}}
                 {{-- <div class="col-lg-8">
                     <div class="contact_form_one">
                         <h3>Get In Touch</h3>
@@ -101,10 +113,10 @@
                         </div>
                     </div>
                 </div> --}}
-                <div class="col-lg-12">
+                {{-- <div class="col-lg-12">
                     <div class="map_area">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.807548266042!2d122.05879767584094!3d6.913599518505434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x325041dd7a24816f%3A0x51af215fb64cc81a!2sWestern%20Mindanao%20State%20University!5e0!3m2!1sen!2sph!4v1711164394331!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

@@ -185,8 +185,8 @@
                                 <div class="actions">
                                     <a onclick="addToWishlist({{$product->id}})" class="action wishlist"
                                         title="Wishlist"><i class="far fa-heart"></i></a>
-                                    <a href="compare.html" class="action compare" title="Compare"><i
-                                            class="fas fa-exchange-alt"></i></a>
+                                    {{-- <a href="compare.html" class="action compare" title="Compare"><i
+                                            class="fas fa-exchange-alt"></i></a> --}}
                                 </div>
                                 <a class="add-to-cart offcanvas-toggle" href="{{route('products.single-product', ['id' => $product->id])}}">
                                     View Detail

@@ -42,7 +42,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+            {{-- <div class="col-lg-3 col-md-12 col-sm-12 col-12">
                 <div class="footer_one_widget">
                     <h3>NEWSLETTER</h3>
                     <div id="mc_embed_signup" class="subscribe-form">
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </footer>
