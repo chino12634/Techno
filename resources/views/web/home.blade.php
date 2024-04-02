@@ -205,7 +205,7 @@
                                         <div class="instgram_post">
                                             <a href="#!">
                                                 <i class="fab fa-instagram"></i>
-                                                <img src="{{asset('web/img/instagram/post9.png')}}" alt="img">
+                                                <img src="{{asset('web/img/instagram/1.jpg')}}" alt="img">
                                             </a>
                                         </div>
                                     </div>
@@ -213,7 +213,7 @@
                                         <div class="instgram_post">
                                             <a href="#!">
                                                 <i class="fab fa-instagram"></i>
-                                                <img src="{{asset('web/img/instagram/post10.png')}}" alt="img">
+                                                <img src="{{asset('web/img/instagram/2.jpg')}}" alt="img">
                                             </a>
                                         </div>
                                     </div>
@@ -221,7 +221,7 @@
                                         <div class="instgram_post">
                                             <a href="#!">
                                                 <i class="fab fa-instagram"></i>
-                                                <img src="{{asset('web/img/instagram/post1.png')}}" alt="img">
+                                                <img src="{{asset('web/img/instagram/3.jpg')}}" alt="img">
                                             </a>
                                         </div>
                                     </div>
@@ -229,7 +229,7 @@
                                         <div class="instgram_post">
                                             <a href="#!">
                                                 <i class="fab fa-instagram"></i>
-                                                <img src="{{asset('web/img/instagram/post11.png')}}" alt="img">
+                                                <img src="{{asset('web/img/instagram/4.jpg')}}" alt="img">
                                             </a>
                                         </div>
                                     </div>
@@ -237,7 +237,7 @@
                                         <div class="instgram_post">
                                             <a href="#!">
                                                 <i class="fab fa-instagram"></i>
-                                                <img src="{{asset('web/img/instagram/post12.png')}}" alt="img">
+                                                <img src="{{asset('web/img/instagram/5.jpg')}}" alt="img">
                                             </a>
                                         </div>
                                     </div>
@@ -245,7 +245,7 @@
                                         <div class="instgram_post">
                                             <a href="#!">
                                                 <i class="fab fa-instagram"></i>
-                                                <img src="{{asset('web/img/instagram/post2.png')}}" alt="img">
+                                                <img src="{{asset('web/img/instagram/6.jpg')}}" alt="img">
                                             </a>
                                         </div>
                                     </div>
@@ -253,7 +253,7 @@
                                         <div class="instgram_post">
                                             <a href="#!">
                                                 <i class="fab fa-instagram"></i>
-                                                <img src="{{asset('web/img/instagram/post3.png')}}" alt="img">
+                                                <img src="{{asset('web/img/instagram/7.jpg')}}" alt="img">
                                             </a>
                                         </div>
                                     </div>
@@ -261,7 +261,7 @@
                                         <div class="instgram_post">
                                             <a href="#!">
                                                 <i class="fab fa-instagram"></i>
-                                                <img src="{{asset('web/img/instagram/post4.png')}}" alt="img">
+                                                <img src="{{asset('web/img/instagram/8.jpg')}}" alt="img">
                                             </a>
                                         </div>
                                     </div>
@@ -269,7 +269,7 @@
                                         <div class="instgram_post">
                                             <a href="#!">
                                                 <i class="fab fa-instagram"></i>
-                                                <img src="{{asset('web/img/instagram/post5.png')}}" alt="img">
+                                                <img src="{{asset('web/img/instagram/9.jpg')}}" alt="img">
                                             </a>
                                         </div>
                                     </div>
@@ -277,18 +277,18 @@
                                         <div class="instgram_post">
                                             <a href="#!">
                                                 <i class="fab fa-instagram"></i>
-                                                <img src="{{asset('web/img/instagram/post6.png')}}" alt="img">
+                                                <img src="{{asset('web/img/instagram/10.jpg')}}" alt="img">
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="owl-item active" style="width: 363px;">
+                                    {{-- <div class="owl-item active" style="width: 363px;">
                                         <div class="instgram_post">
                                             <a href="#!">
                                                 <i class="fab fa-instagram"></i>
-                                                <img src="{{asset('web/img/instagram/post7.png')}}" alt="img">
+                                                <img src="{{asset('web/img/instagram/11.jpg')}}" alt="img">
                                             </a>
-                                        </div>
-                                    </div>
+                                        </div> --}}
+                                    {{-- </div>
                                     <div class="owl-item active" style="width: 363px;">
                                         <div class="instgram_post">
                                             <a href="#!">
@@ -384,7 +384,7 @@
                                                 <img src="{{asset('web/img/instagram/post7.png')}}" alt="img">
                                             </a>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                             <div class="owl-nav disabled"><button type="button" role="presentation"

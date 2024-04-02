@@ -125,11 +125,11 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="team_slider owl-carousel owl-theme owl-loaded owl-drag">
+                        <div class="owl-carousel owl-theme owl-loaded owl-drag">
                             <div class="owl-stage-outer">
                                 <div class="owl-stage"
                                     style="transform: translate3d(-2169px, 0px, 0px); transition: all 1s ease 0s; width: 4338px;">
-                                    <div class="owl-item cloned" style="width: 331.5px; margin-right: 30px;">
+                                    {{-- <div class="owl-item cloned" style="width: 331.5px; margin-right: 30px;">
                                         <div class="team-single">
                                             <div class="team-img">
                                                 <img src="{{asset('web/img/team/team4.png')}}" alt="img">
@@ -146,7 +146,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="owl-item cloned" style="width: 331.5px; margin-right: 30px;">
                                         <div class="team-single">
                                             <div class="team-img">
@@ -201,7 +201,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="owl-item" style="width: 331.5px; margin-right: 30px;">
+                                    {{-- <div class="owl-item" style="width: 331.5px; margin-right: 30px;">
                                         <div class="team-single">
                                             <div class="team-img">
                                                 <img src="{{asset('web/img/team/team4.png')}}" alt="img">
@@ -218,7 +218,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="owl-item" style="width: 331.5px; margin-right: 30px;">
                                         <div class="team-single">
                                             <div class="team-img">
@@ -273,7 +273,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="owl-item cloned active" style="width: 331.5px; margin-right: 30px;">
+                                    {{-- <div class="owl-item cloned active" style="width: 331.5px; margin-right: 30px;">
                                         <div class="team-single">
                                             <div class="team-img">
                                                 <img src="{{asset('web/img/team/team4.png')}}" alt="img">
@@ -290,15 +290,15 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="owl-item cloned active" style="width: 331.5px; margin-right: 30px;">
                                         <div class="team-single">
                                             <div class="team-img">
                                                 <img src="{{asset('web/img/team/team1.png')}}" alt="img">
                                             </div>
                                             <div class="team-content">
-                                                <h4 class="team-name font--bold">Mr. Heroas</h4>
-                                                <span class="team-title">Head Of Markating</span>
+                                                <h4 class="team-name font--bold">Mr. Ebol</h4>
+                                                <span class="team-title">Back-End Programmer</span>
                                                 <ul class="team-social pos-absolute">
                                                     <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
                                                     <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
@@ -315,7 +315,7 @@
                                                 <img src="{{asset('web/img/team/team2.png')}}" alt="img">
                                             </div>
                                             <div class="team-content">
-                                                <h4 class="team-name font--bold">Ms. Raka</h4>
+                                                <h4 class="team-name font--bold">Ms. Gallano</h4>
                                                 <span class="team-title">Admin</span>
                                                 <ul class="team-social pos-absolute">
                                                     <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
@@ -333,8 +333,8 @@
                                                 <img src="{{asset('web/img/team/team3.png')}}" alt="img">
                                             </div>
                                             <div class="team-content">
-                                                <h4 class="team-name font--bold">Ms. Valona</h4>
-                                                <span class="team-title">Manager</span>
+                                                <h4 class="team-name font--bold">Mr. Las Marias</h4>
+                                                <span class="team-title">Front-End Programmer</span>
                                                 <ul class="team-social pos-absolute">
                                                     <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
                                                     <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
