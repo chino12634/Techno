@@ -5,7 +5,7 @@
             <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                 <div class="footer_left_side">
                     <a href="#!"><img src="{{asset('web/img/logo4.png')}}" alt="logo"></a>
-                    <p>We are a team that engaged in the field of shirt products within the WMSU COE and serve 
+                    <p>We are a team that engaged in the field of shirt products within the WMSU COE and serve
                         the best service for your apparel and give you the best quality of shirts!</p>
                     <div class="footer_left_side_icon">
                         <ul>
@@ -36,9 +36,9 @@
                         <li><a href="{{route('user.my-account')}}">My Account</a></li>
                         <li><a href="{{route('login')}}">Login</a></li>
                         <li><a href="{{route('register')}}">Register</a></li>
-                        <li><a href="{{route('forgot-password')}}">Forgot Password</a></li>
+                        {{-- <li><a href="{{route('forgot-password')}}">Forgot Password</a></li>
                         <li><a href="{{route('user.my-cart')}}">Cart</a></li>
-                        <li><a href="{{route('user.my-wishlist')}}">Wishlist</a></li>
+                        <li><a href="{{route('user.my-wishlist')}}">Wishlist</a></li> --}}
                     </ul>
                 </div>
             </div>

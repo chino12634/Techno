@@ -119,35 +119,17 @@
                     <div class="col-lg-12">
                         <div class="center_heading">
                             <h2>Expert Team</h2>
-                            <p>Mauris luctus nisi sapien tristique dignissim ornare</p>
+                            <p>The team is made up of skilled developers who collaborate to solve challenging problems and create innovative solutions. </p>
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                {{-- <div class="row">
                     <div class="col-lg-12">
                         <div class="owl-carousel owl-theme owl-loaded owl-drag">
                             <div class="owl-stage-outer">
                                 <div class="owl-stage"
                                     style="transform: translate3d(-2169px, 0px, 0px); transition: all 1s ease 0s; width: 4338px;">
-                                    {{-- <div class="owl-item cloned" style="width: 331.5px; margin-right: 30px;">
-                                        <div class="team-single">
-                                            <div class="team-img">
-                                                <img src="{{asset('web/img/team/team4.png')}}" alt="img">
-                                            </div>
-                                            <div class="team-content">
-                                                <h4 class="team-name font--bold">Ms. Sandela</h4>
-                                                <span class="team-title">CEO</span>
-                                                <ul class="team-social pos-absolute">
-                                                    <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
-                                                    <li><a href="#!"><i class="fab fa-linkedin"></i></a></li>
-                                                    <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
-                                                    <li><a href="#!"><i class="fab fa-google-plus-g"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div> --}}
-                                    <div class="owl-item cloned" style="width: 331.5px; margin-right: 30px;">
+                                    <div class="owl-item cloned" style="width: 331.5px; margin-right: 60px;">
                                         <div class="team-single">
                                             <div class="team-img">
                                                 <img src="{{asset('web/img/team/team1.png')}}" alt="img">
@@ -201,24 +183,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    {{-- <div class="owl-item" style="width: 331.5px; margin-right: 30px;">
-                                        <div class="team-single">
-                                            <div class="team-img">
-                                                <img src="{{asset('web/img/team/team4.png')}}" alt="img">
-                                            </div>
-                                            <div class="team-content">
-                                                <h4 class="team-name font--bold">Ms. Sandela</h4>
-                                                <span class="team-title">CEO</span>
-                                                <ul class="team-social pos-absolute">
-                                                    <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
-                                                    <li><a href="#!"><i class="fab fa-linkedin"></i></a></li>
-                                                    <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
-                                                    <li><a href="#!"><i class="fab fa-google-plus-g"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div> --}}
                                     <div class="owl-item" style="width: 331.5px; margin-right: 30px;">
                                         <div class="team-single">
                                             <div class="team-img">
@@ -273,24 +237,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    {{-- <div class="owl-item cloned active" style="width: 331.5px; margin-right: 30px;">
-                                        <div class="team-single">
-                                            <div class="team-img">
-                                                <img src="{{asset('web/img/team/team4.png')}}" alt="img">
-                                            </div>
-                                            <div class="team-content">
-                                                <h4 class="team-name font--bold">Ms. Sandela</h4>
-                                                <span class="team-title">CEO</span>
-                                                <ul class="team-social pos-absolute">
-                                                    <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
-                                                    <li><a href="#!"><i class="fab fa-linkedin"></i></a></li>
-                                                    <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
-                                                    <li><a href="#!"><i class="fab fa-google-plus-g"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div> --}}
                                     <div class="owl-item cloned active" style="width: 331.5px; margin-right: 30px;">
                                         <div class="team-single">
                                             <div class="team-img">
@@ -298,7 +244,7 @@
                                             </div>
                                             <div class="team-content">
                                                 <h4 class="team-name font--bold">Mr. Ebol</h4>
-                                                <span class="team-title">Back-End Programmer</span>
+                                                <span class="team-title">Front/Back-End Programmer</span>
                                                 <ul class="team-social pos-absolute">
                                                     <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
                                                     <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
@@ -355,7 +301,62 @@
                         </div>
                     </div>
                 </div>
+            </div> --}}
+            <div class="row justify-content-center">
+                <div class="col-lg-3">
+                    <div class="team-single text-center">
+                        <div class="team-img">
+                            <img src="{{asset('web/img/team/team1.png')}}" alt="img" class="img-fluid square-img">
+                        </div>
+                        <div class="team-content">
+                            <h4 class="team-name font--bold">Mr. Ebol</h4>
+                            <span class="team-title">BackStab Programmer</span>
+                            <ul class="team-social pos-absolute">
+                                <li><a href="https://www.facebook.com/chinoDarwinE/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/darwin-ebol-057a02240/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="https://www.instagram.com/dchinooo/"  target="_blank"  ><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-single text-center">
+                        <div class="team-img">
+                            <img src="{{asset('web/img/team/team2.png')}}" alt="img" class="img-fluid square-img">
+                        </div>
+                        <div class="team-content">
+                            <h4 class="team-name font--bold">Ms. Gallano</h4>
+                            <span class="team-title">Head Of Marketing/Admin</span>
+                            <ul class="team-social pos-absolute">
+                                <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#!"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#!"><i class="fab fa-google-plus-g"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="team-single text-center">
+                        <div class="team-img">
+                            <img src="{{asset('web/img/team/team3.png')}}" alt="img" class="img-fluid square-img">
+                        </div>
+                        <div class="team-content">
+                            <h4 class="team-name font--bold">Mr. Las Marias</h4>
+                            <span class="team-title">Front-End Programmer</span>
+                            <ul class="team-social pos-absolute">
+                                <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#!"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#!"><i class="fab fa-google-plus-g"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </section>
         <!-- Instagram Arae -->
         <section id="instagram_area_one" class="pt-100">
