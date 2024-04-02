@@ -98,10 +98,10 @@
                                             <a onclick="addToWishlist({{$product->id}})" class="action wishlist" title="Wishlist"><i
                                                     class="far fa-heart"></i>Add To Wishlist</a>
                                         </li>
-                                        <li>
+                                        {{-- <li>
                                             <a href="compare.html" class="action compare" title="Compare"><i
                                                     class="fas fa-exchange-alt"></i>Add To Compare</a>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                     <button onclick="addToCart()" class="theme-btn-one btn-black-overlay btn_sm">Add To Cart</button>
                                 </div>
@@ -157,7 +157,7 @@
                 <div class="col-lg-12">
                     <div class="center_heading">
                         <h2>You Might Also Like</h2>
-                        <p>Mauris luctus nisi sapien tristique dignissim ornare</p>
+                        {{-- <p>Mauris luctus nisi sapien tristique dignissim ornare</p> --}}
                     </div>
                 </div>
             </div>

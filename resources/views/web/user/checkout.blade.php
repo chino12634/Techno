@@ -158,7 +158,7 @@
                                         <tr>
                                             <td>{{ $item->productInventory()->first()->product()->first()->name }} - {{ $item->productInventory()->first()->size }} - {{ $item->productInventory()->first()->color }}<span class="product-qty"> x {{ $item->quantity }}</span>
                                             </td>
-                                            <td>@money($item->price(), '₱')</td>
+                                            <td>@money($item->price())</td>
                                         </tr>
                                     @endforeach
                                 </tbody>
