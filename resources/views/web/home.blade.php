@@ -13,7 +13,7 @@
                             style="visibility: visible; animation-duration: 3s; animation-delay: 0.3s; animation-name: flipInX;">
                             Live your department <span class="wow flipInX" data-wow-duration="2.0s" data-wow-delay=".5s"
                                 style="visibility: visible; animation-duration: 2s; animation-delay: 0.5s; animation-name: flipInX;">Fashion and pride</span>
-                                
+
                         </h1>
                         <a href="{{route('products')}}" class="theme-btn-one bg-black btn_md">Shop Now</a>
                     </div>
@@ -94,7 +94,7 @@
                                                             <a href="{{route('products.single-product', ['id' => $product->id])}}">{{$product->name}}</a>
                                                         </h5>
                                                         <span class="price">
-                                                            <span class="new">@money($product->discountPrice(), '₱')</span>
+                                                            <span class="new">@money($product->discountPrice())</span>
                                                         </span>
                                                     </div>
                                                 </div>
