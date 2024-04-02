@@ -149,7 +149,7 @@
                                                         <option value="1" {{ $user->gender == 1 ? 'selected' : '' }}>Female</option>
                                                     </select>
                                                 </div>
-                                                <div class="col-md-6">
+                                                {{-- <div class="col-md-6">
                                                     <label for="apartment_number" class="form-label">Apartment number</label>
                                                     <input type="text" class="form-control" placeholder="apartment number" min="0" id="apartment_number" name="apartment_number" value="{{ $user->apartment_number }}">
                                                     @error('apartment_number')
@@ -162,21 +162,21 @@
                                                     @error('street')
                                                     <p class="text-danger">{{ $message }}</p>
                                                     @enderror
-                                                </div>
-                                                <div class="col-md-6">
+                                                </div> --}}
+                                                {{-- <div class="col-md-6">
                                                     <label for="ward" class="form-label">ward</label>
                                                     <input type="text" class="form-control" placeholder="ward" min="0" id="ward" name="ward" value="{{ $user->ward }}">
                                                     @error('ward')
                                                     <p class="text-danger">{{ $message }}</p>
                                                     @enderror
-                                                </div>
-                                                <div class="col-md-6">
+                                                </div> --}}
+                                                {{-- <div class="col-md-6">
                                                     <label for="district" class="form-label">district</label>
                                                     <input type="text" class="form-control" placeholder="district" min="0" id="district" name="district" value="{{ $user->district }}">
                                                     @error('district')
                                                     <p class="text-danger">{{ $message }}</p>
                                                     @enderror
-                                                </div>
+                                                </div> --}}
                                                 <div class="col-md-6">
                                                     <label for="city" class="form-label">city</label>
                                                     <input type="text" class="form-control" placeholder="city" min="0" id="city" name="city" value="{{ $user->city }}">

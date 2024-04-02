@@ -4,9 +4,8 @@
 
         <div class="ec-brand">
             <a href="/admin/dashboard">
-                <img class="ec-brand-icon"
-                    src="https://andit.co/projects/html/andshop/andshop-dashboard/assets/img/logo/favicon.png" alt="">
-                <span class="ec-brand-name text-truncate">ANDSHOP</span>
+                <img src="{{asset('/web/img/favicon/ms-icon-144x144.png')}}" alt="">
+                <span class="ec-brand-name text-truncate">DAK'S</span>
             </a>
         </div>
 
@@ -30,7 +29,7 @@
                                         </a>
                                         <hr>
                                     </li>
-                                    <!-- Roles -->
+                                    {{-- <!-- Roles -->
                                     <li class="has-sub">
                                         <a class="sidenav-item-link" href="javascript:void(0)">
                                             <i class="mdi mdi-receipt"></i>
@@ -51,7 +50,7 @@
                                             </ul>
                                         </div>
                                         <hr>
-                                    </li>
+                                    </li> --}}
 
                                     <!-- Admin Users -->
                                     <li class="has-sub">
@@ -87,7 +86,7 @@
                                                     <a class="sidenav-item-link" href="/admin/user">
                                                         <span class="nav-text">User List</span>
                                                     </a>
-                                                </li> 
+                                                </li>
                                             </ul>
                                         </div>
                                         <hr>
@@ -131,7 +130,7 @@
                                                     <a class="sidenav-item-link" href="{{ route('admin.product') }}">
                                                         <span class="nav-text">List Product</span>
                                                     </a>
-                                                </li>                                        
+                                                </li>
                                             </ul>
                                         </div>
                                     </li>
@@ -172,14 +171,14 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                    </li>                     
+                                    </li>
                                     <!-- Logout -->
                                     <li>
                                         <a class="sidenav-item-link" href="/logout">
                                             <i class="mdi mdi-login-variant"></i>
                                             <span class="nav-text">Logout</span>
                                         </a>
-                                    </li>             
+                                    </li>
                                 </ul>
                             </div>
                         </div>

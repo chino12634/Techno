@@ -46,11 +46,11 @@
                         <div class="row">
                             <div class="col-6"><label>Ship address: <span class="text-muted">{{ $orderDetail->ship_address() }}</span></label></div>
                             <div class="col-6"><label>Telephone: <span class="text-muted">{{ $orderDetail->telephone }}</span></label></div>
-                            <div class="col-6"><label>Subtotal: <span class="text-muted">@money($orderDetail->subtotal)</span></label></div>
+                            <div class="col-6"><label>Subtotal: <span class="text-muted">@money($orderDetail->subtotal, '₱')</span></label></div>
                             <div class="col-6"><label>Order date: <span class="text-muted">{{ $orderDetail->created_at }}</span></label></div>
-                            <div class="col-6"><label>Discount: <span class="text-muted">@money($orderDetail->discountTotal())</span></label></div>
+                            <div class="col-6"><label>Discount: <span class="text-muted">@money($orderDetail->discountTotal(), '₱')</span></label></div>
                             <div class="col-6"><label>Payment: <span class="text-muted">{{ $orderDetail->payment()->first()->name }}</span></label></div>
-                            <div class="col-6"><label>Total: <span class="text-muted">@money($orderDetail->total)</span></label></div>
+                            <div class="col-6"><label>Total: <span class="text-muted">@money($orderDetail->total, '₱')</span></label></div>
                             <div class="col-6"><label>Status: <span class="text-muted">{{ $orderDetail->status() }}</span></label></div>
                             <div class="col-12"><label>Note: <span class="text-muted">{{ $orderDetail->note }}</span></label></div>
                         </div>
@@ -96,10 +96,10 @@
                                                 <td><img class="img-60" src="data:image/png;base64, {{ $orderItem->productInventory()->first()->product()->first()->image }}" alt=""></td>
                                                 <td>{{ $orderItem->productInventory()->first()->size }}</td>
                                                 <td>{{ $orderItem->productInventory()->first()->color }}</td>
-                                                <td>@money($orderItem->price)</td>
+                                                <td>@money($orderItem->price, '₱')</td>
                                                 <td>{{ $orderItem->discount_percent }}</td>
                                                 <td>{{ $orderItem->quantity }}</td>
-                                                <td>@money($orderItem->discountPrice())</td>
+                                                <td>@money($orderItem->discountPrice(), '₱')</td>
                                             </tr>
                                         @empty
                                             <p class="text-center my-5">No products</p>

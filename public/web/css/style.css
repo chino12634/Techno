@@ -2028,10 +2028,10 @@ Top Header Area CSS
 }
 
 .banner_text_one h1 {
-    font-size: 150px;
+    font-size: 110px;
     text-transform: uppercase;
     font-weight: 100;
-    line-height: 150px;
+    line-height: 100px;
 }
 
 .banner_text_one h3 {

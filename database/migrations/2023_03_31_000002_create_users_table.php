@@ -21,11 +21,11 @@ return new class extends Migration
             $table->rememberToken();
             $table->date('birthdate')->nullable();
             $table->boolean('gender')->default(1);
-            $table->string('telephone', 10)->unique();
-            $table->string('apartment_number', 256);
-            $table->string('street', 256);
-            $table->string('ward', 256);
-            $table->string('district', 256);
+            $table->string('telephone', 11)->unique();
+            // $table->string('apartment_number', 256);
+            // $table->string('street', 256);
+            // $table->string('ward', 256);
+            // $table->string('district', 256);
             $table->string('city', 256);
             $table->boolean('receive_newsletter')->default(0);
             $table->boolean('receive_offers')->default(0);

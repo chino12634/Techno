@@ -75,32 +75,32 @@ Route::middleware(['authenticate', 'authorize'])->name('admin.')->prefix('admin'
     Route::get('/user', [UserController::class, 'showUsers'])->name('user');
     Route::get('/user/{id}/info', [UserController::class, 'showUserDetail'])->name('user.info');
 
-    Route::get('/admin-user', [UserController::class, 'showAdminUsers'])->name('adminUser')->middleware('role:admin');
-    Route::get('/admin-user/create', [UserController::class, 'showFormCreate'])->name('adminUser.create')->middleware('role:admin');
-    Route::post('/admin-user/create', [UserController::class, 'storeAdminUser'])->name('adminUser.create')->middleware('role:admin');
-    Route::post('/admin-user/update{id}', [UserController::class, 'updateAdminUser'])->name('adminUser.update')->middleware('role:admin');
-    Route::get('/admin-user/profile', [UserController::class, 'showAdminProfile'])->name('adminUser.profile')->middleware('role:admin');
-    Route::post('/admin-user/update-profile/{id}', [UserController::class, 'updateProfile'])->name('adminUser.updateProfile')->middleware('role:admin');
-    Route::get('/admin-user/{user}/edit', [UserController::class, 'editAdminUser'])->name('adminUser.edit')->middleware('role:admin');
+    Route::get('/admin-user', [UserController::class, 'showAdminUsers'])->name('adminUser');
+    Route::get('/admin-user/create', [UserController::class, 'showFormCreate'])->name('adminUser.create');
+    Route::post('/admin-user/create', [UserController::class, 'storeAdminUser'])->name('adminUser.create');
+    Route::post('/admin-user/update{id}', [UserController::class, 'updateAdminUser'])->name('adminUser.update');
+    Route::get('/admin-user/profile', [UserController::class, 'showAdminProfile'])->name('adminUser.profile');
+    Route::post('/admin-user/update-profile/{id}', [UserController::class, 'updateProfile'])->name('adminUser.updateProfile');
+    Route::get('/admin-user/{user}/edit', [UserController::class, 'editAdminUser'])->name('adminUser.edit');
 
-    Route::get('/product', [ProductController::class, 'index'])->name('product')->middleware('role:admin');
-    Route::get('/product/create', [ProductController::class, 'showFormCreate'])->name('product.create')->middleware('role:admin');
-    Route::post('/product/create', [ProductController::class, 'store'])->name('product.create')->middleware('role:admin');
-    Route::get('/product/{product}/edit', [ProductController::class, 'edit'])->name('product.edit')->middleware('role:admin');
-    Route::post('/product/update{id}', [ProductController::class, 'update'])->name('product.update')->middleware('role:admin');
+    Route::get('/product', [ProductController::class, 'index'])->name('product');
+    Route::get('/product/create', [ProductController::class, 'showFormCreate'])->name('product.create');
+    Route::post('/product/create', [ProductController::class, 'store'])->name('product.create');
+    Route::get('/product/{product}/edit', [ProductController::class, 'edit'])->name('product.edit');
+    Route::post('/product/update{id}', [ProductController::class, 'update'])->name('product.update');
 
-    Route::get('/inventory', [ProductInventoryController::class, 'index'])->name('inventory')->middleware('role:admin');
-    Route::get('/inventory/create', [ProductInventoryController::class, 'showFormCreate'])->name('inventory.create')->middleware('role:admin');
-    Route::post('/inventory/create', [ProductInventoryController::class, 'create'])->name('inventory.create')->middleware('role:admin');
-    Route::get('/inventory/{id}/edit', [ProductInventoryController::class, 'edit'])->name('inventory.edit')->middleware('role:admin');
-    Route::post('/inventory/update{id}', [ProductInventoryController::class, 'update'])->name('inventory.update')->middleware('role:admin');
+    Route::get('/inventory', [ProductInventoryController::class, 'index'])->name('inventory');
+    Route::get('/inventory/create', [ProductInventoryController::class, 'showFormCreate'])->name('inventory.create');
+    Route::post('/inventory/create', [ProductInventoryController::class, 'create'])->name('inventory.create');
+    Route::get('/inventory/{id}/edit', [ProductInventoryController::class, 'edit'])->name('inventory.edit');
+    Route::post('/inventory/update{id}', [ProductInventoryController::class, 'update'])->name('inventory.update');
 
-    Route::get('/order-detail', [OrderDetailController::class, 'index'])->name('order')->middleware('role:admin');
-    Route::get('/order-detail/{id}/edit', [OrderDetailController::class, 'showOrderDetailInfo'])->name('order.edit')->middleware('role:admin');
-    Route::post('/order-detail/update-status', [OrderDetailController::class, 'updateOrderStatus'])->name('coupon.updateStatus')->middleware('role:admin');
+    Route::get('/order-detail', [OrderDetailController::class, 'index'])->name('order');
+    Route::get('/order-detail/{id}/edit', [OrderDetailController::class, 'showOrderDetailInfo'])->name('order.edit');
+    Route::post('/order-detail/update-status', [OrderDetailController::class, 'updateOrderStatus'])->name('coupon.updateStatus');
 
-    Route::get('/role', [RoleUserController::class, 'index'])->name('role')->middleware('role:admin');
-    Route::get('/role/create', [RoleUserController::class, 'showFormCreate'])->name('role.create')->middleware('role:admin');
-    Route::post('/role/create', [RoleUserController::class, 'store'])->name('role.create')->middleware('role:admin');
-    Route::delete('/admin/role/{user_id}/{role_id}', [RoleUserController::class, 'destroy'])->name('role.destroy')->middleware('role:admin');
+    Route::get('/role', [RoleUserController::class, 'index'])->name('role');
+    Route::get('/role/create', [RoleUserController::class, 'showFormCreate'])->name('role.create');
+    Route::post('/role/create', [RoleUserController::class, 'store'])->name('role.create');
+    Route::delete('/admin/role/{user_id}/{role_id}', [RoleUserController::class, 'destroy'])->name('role.destroy');
 });

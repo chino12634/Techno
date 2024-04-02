@@ -86,8 +86,8 @@ class ProductController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:256',
-            'image_upload' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'image_hover_upload' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'image_upload' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg',
+            'image_hover_upload' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg',
             'description' => 'required|string|max:512',
             'weight' => 'required|string|max:32',
             'dimensions' => 'required|string|max:128',

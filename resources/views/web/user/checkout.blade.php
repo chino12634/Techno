@@ -57,16 +57,16 @@
                                             <input type="text" class="form-control" value="{{ $user->telephone }}" id="telephone" name="telephone" required>
                                             @error('telephone')
                                                 <p class="text-danger">{{ $message }}</p>
-                                            @enderror  
+                                            @enderror
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                                    {{-- <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                                         <div class="form-group">
                                             <label for="apartment_number">Apartment number <span>*</span></label>
                                             <input type="text" class="form-control" value="{{ $user->apartment_number }}" id="apartment_number" name="apartment_number" required>
                                             @error('apartment_number')
                                                 <p class="text-danger">{{ $message }}</p>
-                                            @enderror  
+                                            @enderror
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12 col-sm-12 col-12">
@@ -75,7 +75,7 @@
                                             <input type="text" class="form-control" value="{{ $user->street }}" id="street" name="street" required>
                                             @error('street')
                                                 <p class="text-danger">{{ $message }}</p>
-                                            @enderror  
+                                            @enderror
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12 col-sm-12 col-12">
@@ -84,7 +84,7 @@
                                             <input type="text" class="form-control" value="{{ $user->ward }}" id="ward" name="ward" required>
                                             @error('ward')
                                                 <p class="text-danger">{{ $message }}</p>
-                                            @enderror  
+                                            @enderror
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12 col-sm-12 col-12">
@@ -93,16 +93,16 @@
                                             <input type="text" class="form-control" value="{{ $user->district }}" id="district" name="district" required>
                                             @error('district')
                                                 <p class="text-danger">{{ $message }}</p>
-                                            @enderror  
+                                            @enderror
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                                         <div class="form-group">
                                             <label for="city">City <span>*</span></label>
                                             <input type="text" class="form-control" value="{{ $user->city }}" id="city" name="city" required>
                                             @error('city')
                                                 <p class="text-danger">{{ $message }}</p>
-                                            @enderror  
+                                            @enderror
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-12">
@@ -111,10 +111,10 @@
                                             <textarea rows="5" class="form-control" id="note" name="note" placeholder="Order notes"></textarea>
                                             @error('note')
                                                 <p class="text-danger">{{ $message }}</p>
-                                            @enderror 
+                                            @enderror
                                         </div>
                                     </div>
-                                    <input id="coupon_id" name="coupon_id" type="text" value="" hidden />        
+                                    <input id="coupon_id" name="coupon_id" type="text" value="" hidden />
                                 </div>
                             </div>
                         </div>
@@ -158,7 +158,7 @@
                                         <tr>
                                             <td>{{ $item->productInventory()->first()->product()->first()->name }} - {{ $item->productInventory()->first()->size }} - {{ $item->productInventory()->first()->color }}<span class="product-qty"> x {{ $item->quantity }}</span>
                                             </td>
-                                            <td>@money($item->price())</td>
+                                            <td>@money($item->price(), '₱')</td>
                                         </tr>
                                     @endforeach
                                 </tbody>
@@ -184,7 +184,7 @@
                         </div>
                         @error('cart_items')
                             <p class="text-danger">{{ $message }}</p>
-                        @enderror 
+                        @enderror
                     </div>
                     <div class="checkout-area-bg bg-white">
                         <div class="check-heading">
@@ -206,7 +206,7 @@
                             <div id="couponMessage">
                                 @error('coupon_id')
                                     <p class="text-danger">{{ $message }}</p>
-                                @enderror 
+                                @enderror
                             </div>
                         </div>
                     </div>
