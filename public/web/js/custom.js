@@ -258,7 +258,7 @@
 
     // Grocery Page
     /*===========================================
-          Top Categories 
+          Top Categories
     =============================================*/
 
     $('.grocery_categories_slider').owlCarousel({
@@ -579,7 +579,7 @@
             $('#exampleModal').modal('show');
         }, 500);
     });
-    // Preeloader 
+    // Preeloader
     $(window).on("load", function () {
         $("#status").fadeOut();
         $("#preloader")
@@ -624,7 +624,7 @@ function viewCart() {
             if(response.status == 200) {
                 const formatter = new Intl.NumberFormat('en-US', {
                     style: 'currency',
-                    currency: 'USD'
+                    currency: 'PHP'
                 });
                 var cart = response.data;
                 var total = 0;
@@ -694,7 +694,7 @@ function viewWishlist() {
             if(response.status == 200){
                 const formatter = new Intl.NumberFormat('en-US', {
                     style: 'currency',
-                    currency: 'USD'
+                    currency: 'PHP'
                 });
                 var wishlist = response.data;
                 var html = `<h3>My Wishlist (${wishlist.length})</h3>`;

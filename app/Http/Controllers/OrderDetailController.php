@@ -93,15 +93,15 @@ class OrderDetailController extends Controller
             'coupon_id' => 'nullable|integer|exists:coupons,id',
             'payment_id' => 'required|integer|exists:payments,id',
             'note' => 'nullable|string|max:512',
-            'apartment_number' => 'required|string|max:256',
-            'street' => 'required|string|max:256',
-            'ward' => 'required|string|max:256',
-            'district' => 'required|string|max:256',
+            // 'apartment_number' => 'required|string|max:256',
+            // 'street' => 'required|string|max:256',
+            // 'ward' => 'required|string|max:256',
+            // 'district' => 'required|string|max:256',
             'city' => 'required|string|max:256',
-            'telephone' => 'required|string|min:10|max:10|regex:/^0[0-9]{9}$/',
+            'telephone' => 'required|string|min:11|max:11',
         ],
         [
-            'telephone.regex' => 'Telephone must be 10 digits and start with 0.',
+            'telephone.regex' => 'Telephone must be 11 digits and start with 0.',
         ]);
         $user = User::find(Auth::user()->id);
         $cartItems = CartItem::where('user_id', $user->id)->get();
@@ -164,7 +164,7 @@ class OrderDetailController extends Controller
         }
         return true;
     }
-    
+
     public function showOrderDetailInfo($id)
     {
         try {

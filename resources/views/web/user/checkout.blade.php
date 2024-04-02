@@ -230,7 +230,7 @@
             success: function(response) {
                 const formatter = new Intl.NumberFormat('en-US', {
                         style: 'currency',
-                        currency: 'USD'
+                        currency: 'PHP'
                 });
                 if(response.status == 200){
                     $('#couponMessage').html(`<p class="text-success">${response.message}</p>`);
