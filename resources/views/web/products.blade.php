@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <div class="product_shot" style="justify-content: flex-start;">
-                        <div class="product_shot_title">
+                        {{-- <div class="product_shot_title">
                             <p> Filter:</p>
                         </div>
                         <div class="customs_selects">
@@ -37,7 +37,7 @@
                                 <option {{$filter == 'pant' ? 'selected' : ''}} value="pant">Pant</option>
                                 <option {{$filter == 'shirt' ? 'selected' : ''}} value="shirt">Shirt</option>
                             </select>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
