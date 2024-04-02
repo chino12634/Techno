@@ -1,6 +1,6 @@
 @extends('web.layouts.default')
 
-@section('title', 'Contact')
+@section('title', 'services')
 
 @section('content')
     <!-- Banner Area -->
@@ -13,7 +13,7 @@
                         <ul>
                             <li><a href="{{route('home')}}">Home</a></li>
                             <li><i class="fas fa-slash"></i></li>
-                            <li class="active">Contact</li>
+                            <li class="active">Services</li>
                         </ul>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                         <ul>
                             <li class="address_location">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <p>Normal Rd, Zamboanga City, Zamboanga del Sur, Philippines</p>
+                                <p>32, Choto Mirzapur, Ahsan Ahmed Road Khulna 9100, Bangladesh</p>
                             </li>
                             <li class="address_location">
                                 <i class="fas fa-phone-volume"></i>

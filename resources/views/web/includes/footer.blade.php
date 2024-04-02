@@ -6,7 +6,7 @@
                 <div class="footer_left_side">
                     <a href="#!"><img src="{{asset('web/img/logo4.png')}}" alt="logo"></a>
                     <p>We are a team that engaged in the field of shirt products within the WMSU COE and serve 
-                        the best service for your apparel and give you the best quality of shirts!.</p>
+                        the best service for your apparel and give you the best quality of shirts!</p>
                     <div class="footer_left_side_icon">
                         <ul>
                             <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
