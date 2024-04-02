@@ -32,6 +32,8 @@ Route::get('products', [ApplicationController::class, 'products'])->name('produc
 Route::get('order-tracking', [ApplicationController::class, 'orderTracking'])->name('order-tracking');
 Route::get('about-us', [ApplicationController::class, 'aboutUs'])->name('about-us');
 Route::get('contact', [ApplicationController::class, 'contact'])->name('contact');
+Route::get('services', [ApplicationController::class, 'services'])->name('services');
+Route::get('reviews', [ApplicationController::class, 'reviews'])->name('reviews');
 
 Route::middleware('authenticate')->name('user')->prefix('user')->group(function() {
     Route::name('.my-account')->prefix('my-account')->group(function() {
