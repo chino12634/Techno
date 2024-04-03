@@ -127,17 +127,17 @@
                                                     {{ $orderItem->ProductInventory->Product->name.' - '.$orderItem->ProductInventory->size.' - '.$orderItem->ProductInventory->color }}
                                                 </td>
                                                 <td>{{ $orderItem->quantity }}</td>
-                                                <td>@money($orderItem->price )</td>
+                                                <td>₱{{ $orderItem->price }}</td>
                                                 <td>
-                                                    @money($orderItem->quantity * $orderItem->price * (1 - $orderItem->discount_percent / 100.0))
-                                                </td>
+                                                    ₱{{ $orderItem->quantity * $orderItem->price * (1 - $orderItem->discount_percent / 100.0) }}
+                                                </td>                                                
                                             </tr>
                                             @endforeach
                                             <tr>
                                                 <td colspan="4">
                                                 </td>
                                                 <td class="text-right"><strong>Total:</strong></td>
-                                                <td class="text-right"><strong>@money( $orderDetail->subtotal )</strong></td>
+                                                <td class="text-right"><strong>₱{{ $orderDetail->subtotal }}</strong></td>
                                             </tr>
                                             <tr>
                                                 <td colspan="4">
@@ -157,7 +157,7 @@
                                                 <td colspan="4">
                                                 </td>
                                                 <td class="text-right"><strong>Grand total:</strong></td>
-                                                <td class="text-right"><strong>@money($orderDetail->total)</strong></td>
+                                                <td class="text-right"><strong>₱{{ $orderDetail->total }}</strong></td>
                                             </tr>
                                         </tbody>
                                     </table>

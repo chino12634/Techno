@@ -201,7 +201,7 @@
                                     </td>
                                     <td class="d-none d-lg-table-cell">{{ $orderItem->quantity }}</td>
                                     <td class="d-none d-lg-table-cell">{{ $orderItem->created_at }}</td>
-                                    <td class="d-none d-lg-table-cell">@money($orderItem->quantity * $orderItem->price * (1 - $orderItem->discount_percent / 100.0))
+                                    <td class="d-none d-lg-table-cell">₱{{ $orderItem->quantity * $orderItem->price * (1 - $orderItem->discount_percent / 100.0) }}</td>
                                     </td>
                                     <td>
                                         @if($orderItem->OrderDetail->status == 0)

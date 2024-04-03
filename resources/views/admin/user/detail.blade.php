@@ -161,8 +161,8 @@
                                                     </div>
                                                     <div class="card-bottom">
                                                         <h3><a href="product-detail.html" > {{ $orderItem->ProductInventory->Product->name.' - '.$orderItem->ProductInventory->size.' - '.$orderItem->ProductInventory->color }} </a></h3>
-                                                        <p>@money($orderItem->ProductInventory->Product->sell_price * (1 - $orderItem->ProductInventory->Product->discount_percent /
-                                                            100.0)) <del>@money($orderItem->ProductInventory->Product->sell_price)</del></p>
+                                                        <p>₱{{ $orderItem->ProductInventory->Product->sell_price * (1 - $orderItem->ProductInventory->Product->discount_percent / 100.0) }}
+                                                            <del>₱{{ $orderItem->ProductInventory->Product->sell_price }}</del></p>
                                                     </div>
                                                     <div class="card-action">
                                                         <div class="card-edit"><i class="mdi mdi-circle-edit-outline"></i>
@@ -211,7 +211,7 @@
                                                                         {{$orderDetail->User->first_name.' '.$orderDetail->User->last_name}}
                                                                     </td>
                                                                     <td>
-                                                                        @money($orderDetail->total)
+                                                                        ₱{{ $orderDetail->total }}
                                                                     </td>
                                                                     <td>
                                                                         {{$orderDetail->Payment->name}}

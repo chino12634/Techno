@@ -48,7 +48,7 @@
                                         <tr class="odd">
                                             <td class="sorting_1">{{$orderDetail->id}}</td>
                                             <td>{{$orderDetail->User->first_name.' '.$orderDetail->User->last_name}}</td>
-                                            <td>@money($orderDetail->total)</td>
+                                            <td>₱{{ $orderDetail->total }}</td>
                                             <td>{{$orderDetail->coupon_id ? $orderDetail->Coupon->discount_percent : 0}}%</td>
                                             <td>{{$orderDetail->Payment->name}}</td>
                                             <td>{{$orderDetail->telephone}}</td>

@@ -58,8 +58,8 @@
                                             </td>
                                             <td>{{$product->name}}</td>
                                             <td>{{$product->ProductCategory->name}}</td>
-                                            <td>@money($product->import_price)</td>
-                                            <td>@money($product->sell_price)</td>
+                                            <td>₱{{ $product->import_price }}</td>
+                                            <td>₱{{ $product->sell_price }}</td>
                                             <td>{{$product->discount_percent}}</td>
                                             <td>
                                                 @if($product->is_active == 1)
