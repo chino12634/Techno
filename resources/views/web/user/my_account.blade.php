@@ -102,7 +102,7 @@
                                                         @foreach ($orders as $order)
                                                             <tr class="odd">
                                                                 <td class="sorting_1">{{$order->id}}</td>
-                                                                <td>@money($order->total)</td>
+                                                                <<td>₱{{ $order->total }}</td>
                                                                 <td>{{$order->payment()->first()->name}}</td>
                                                                 <td>{{$order->status()}}</td>
                                                                 <td>{{$order->created_at}}</td>
