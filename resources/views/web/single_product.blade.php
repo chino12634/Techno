@@ -36,10 +36,10 @@
                         <div class="modal_product_content_one">
                             <div id="product_count_form_two">
                                 <input type="text" name="id" value="{{$product->id}}" hidden />
-                                <h3>{{$product->name}} - Code: {{$product->id}}</h3>
-                                <h4>@money($product->discountPrice())
+                                <h3>{{ $product->name }} - Code: {{ $product->id }}</h3>
+                                <h4>₱{{ $product->discountPrice() }}
                                     @if($product->discount_percent > 0)
-                                    <del>@money($product->sell_price)</del>
+                                        <del>₱{{ $product->sell_price }}</del>
                                     @endif
                                 </h4>
                                 <div class="customs_selects">
@@ -197,8 +197,8 @@
                                     <a href="{{route('products.single-product', ['id' => $product->id])}}">{{$product->name}}</a>
                                 </h5>
                                 <span class="price">
-                                    <span class="new">₱money($product->discountPrice())</span>
-                                </span>
+                                    <span class="new">₱{{ $product->discountPrice() }}</span>
+                                </span>                                
                             </div>
                         </div>
                     </div>

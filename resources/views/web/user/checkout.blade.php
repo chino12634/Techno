@@ -158,14 +158,14 @@
                                         <tr>
                                             <td>{{ $item->productInventory()->first()->product()->first()->name }} - {{ $item->productInventory()->first()->size }} - {{ $item->productInventory()->first()->color }}<span class="product-qty"> x {{ $item->quantity }}</span>
                                             </td>
-                                            <td>@money($item->price())</td>
+                                            <td>₱{{ $item->price() }}</td>
                                         </tr>
                                     @endforeach
                                 </tbody>
                                 <tfoot>
                                     <tr>
                                         <th>SubTotal</th>
-                                        <td id="subtotal" class="product-subtotal">@money($subtotal)</td>
+                                        <td id="subtotal" class="product-subtotal">₱{{ $subtotal }}</td>
                                     </tr>
                                     <tr>
                                         <th>Shipping</th>
@@ -173,13 +173,13 @@
                                     </tr>
                                     <tr>
                                         <th>Discount</th>
-                                        <td id="discount" class="product-subtotal">@money($subtotal - $total)</td>
+                                        <td id="discount" class="product-subtotal">₱{{ $subtotal - $total }}</td>
                                     </tr>
                                     <tr>
                                         <th>Total</th>
-                                        <td id="total" class="product-subtotal">@money($total)</td>
+                                        <td id="total" class="product-subtotal">₱{{ $total }}</td>
                                     </tr>
-                                </tfoot>
+                                </tfoot>                                
                             </table>
                         </div>
                         @error('cart_items')
